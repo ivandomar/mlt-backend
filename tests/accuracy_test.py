@@ -1,8 +1,10 @@
+import sys
 from classification.Dataset import Dataset
 from classification.SVMClassificator import SVMClassificator
 from classification.Evaluator import Evaluator
 
 def test_svm_accuracy():
+    sys.setrecursionlimit(5000)
     dataset = Dataset('../assets/golden_dataset.csv')
     dataset.load(['gender', 'age', 'city_zone', 'mother_education', 'father_education', 'educational_support', 'private_classes', 'internet', 'dating', 'free_time', 'friends', 'alcohol_business_days', 'alcohol_weekend', 'outcome'])
 

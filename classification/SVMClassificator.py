@@ -1,5 +1,5 @@
 import pickle
-from Classificator import Classificator
+from .Classificator import Classificator
 
 class SVMClassificator(Classificator):
     __model = None
