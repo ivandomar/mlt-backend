@@ -12,7 +12,7 @@ def get(params: GetPredictionRequestSchema):
     try:
         classificator = SVMClassificator()
 
-        classificator.load("./assets/classificator.pkl")
+        classificator.load("../assets/classificator.pkl")
 
         result = classificator.predict([[]])
         
